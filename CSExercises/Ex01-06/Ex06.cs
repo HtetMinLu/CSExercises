@@ -10,7 +10,19 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            
+            Int32 total;
+            Console.WriteLine("Please enter number!");
+
+            Boolean result = Int32.TryParse(Console.ReadLine().ToString(), out total);
+            if (result == false)
+            {
+                Console.WriteLine("Can't calculate.Please enter only number");
+            }
+            else
+            {
+                Console.WriteLine("The square root of input number is " + Math.Sqrt(total));
+            }
+            Console.ReadLine();
         }
     }
 }
