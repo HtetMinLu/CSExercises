@@ -10,7 +10,20 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            
+            Double input, output;
+            Console.Write("Please enter distance!");
+
+            Boolean result = Double.TryParse(Console.ReadLine().ToString(), out input);
+            if (result == false)
+            {
+                Console.WriteLine("Can't calculate.Please enter only number");
+            }
+            else
+            {
+                output = Math.Round((0.4 * input) + 2.4, 1);
+                Console.WriteLine("The total fare is: $" + output);
+            }
+            Console.ReadLine();
         }
     }
 }

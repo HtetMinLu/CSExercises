@@ -11,7 +11,7 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             Int32 total;
-            Console.WriteLine("Please enter number!");
+            Console.Write("Please enter number!");
 
             Boolean result = Int32.TryParse(Console.ReadLine().ToString(), out total);
             if (result == false)
