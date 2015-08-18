@@ -13,16 +13,16 @@ namespace CSExercises
             dvd = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter quantity for MP3: ");
             mp3 = Convert.ToInt32(Console.ReadLine());
-            if (((tv * 900) + (dvd * 500)) > 5000)
-            {
-                temp = (tv * 900) + (dvd * 500);
-                total = (temp + (mp3 * 700)) - (temp * 0.1);
-                
-            }
-            else if (((tv * 900) + (dvd * 500)) > 10000)
+            if (((tv * 900) + (dvd * 500) + (mp3 * 700)) > 10000)
             {
                 temp = (tv * 900) + (dvd * 500);
                 total = (temp + (mp3 * 700)) - (temp * 0.15);
+            }
+            else if (((tv * 900) + (dvd * 500) + (mp3 * 700)) > 5000)
+            {
+                
+                temp = (tv * 900) + (dvd * 500);
+                total = (temp + (mp3 * 700)) - (temp * 0.1);
                
             }
             else
