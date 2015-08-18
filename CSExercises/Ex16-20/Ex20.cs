@@ -30,7 +30,7 @@ namespace CSExercises
                 total = (tv * 900) + (dvd * 500) + (mp3 * 700);
             }
 
-            Console.WriteLine("Total price for this order is $" + total);
+            Console.WriteLine("Total price for this order is " + total);
             Console.ReadLine();
         }
     }
