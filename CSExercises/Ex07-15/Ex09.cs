@@ -11,7 +11,7 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             Double input, output;
-            Console.Write("Please enter centigrate: ");
+            Console.Write("Please enter one value: ");
 
             Boolean result = Double.TryParse(Console.ReadLine().ToString(), out input);
             if (result == false)
